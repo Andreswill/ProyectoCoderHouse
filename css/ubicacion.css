@@ -1,0 +1,29 @@
+@font-face { 
+    font-family: "Ubuntu";
+    src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+.container-maps {
+    text-align: center;
+    margin: 50px;
+    font-family: "Ubuntu";
+}
+.container-titulo {
+    font-weight: bold;
+    font-size: 3rem;
+
+}
+.container-direccion {
+    font-style: oblique;
+}
+.container-img {
+    height: 15px;
+}
+@media screen and (max-width: 712px){
+    iframe {
+        width: 50%;
+        height: 200px;
+    }
+    .container-titulo {
+        font-size: 2rem;
+    }
+}

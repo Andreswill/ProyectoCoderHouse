@@ -1,0 +1,102 @@
+@font-face { 
+    font-family: "Ubuntu";
+    src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+article {
+    text-align: center;
+}
+article > h2 {
+    color: black;
+    font-family: "Ubuntu";
+    font-size: 3rem;
+}
+article > p {
+    font-family: "Ubuntu";
+    font-size: larger;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 100px; /*le agrego una columna con 100px para centrar el formulario*/
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas: 
+    "nombre-text nombre apellido-text apellido"
+    "email-text email telefono-text telefono"
+    "mensaje-text mensaje mensaje mensaje";
+    gap: 10px;
+    margin: 100px 100px;
+    row-gap: 20px;
+}
+.nombre-text {
+    grid-area: nombre-text;
+}
+#nombre {
+    grid-area: nombre;
+}
+.apellido-text {
+    grid-area: apellido-text;
+}
+#apellido {
+    grid-area: apellido;
+}
+.email-text {
+    grid-area: email-text;
+}
+#email {
+    grid-area: email;
+}
+.telefono-text {
+    grid-area: telefono-text;
+}
+#telefono {
+    grid-area: telefono;
+
+}
+.mensaje-text {
+    grid-area: mensaje-text;
+}
+#mensaje{
+    grid-area: mensaje;
+}
+input, textarea {
+    background-color: cornflowerblue;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+label {
+    font-family: "Ubuntu";
+    font-size: larger;
+    text-align: right;
+}
+input {
+    font-family: "Ubuntu";
+}
+input:focus, textarea:focus {
+    border: 1px solid cornflowerblue;
+    color: aliceblue;
+}
+/*Estilos Responsive*/
+@media screen and (max-width: 820px){
+    article > h2 {
+        font-size: 2rem;
+    }
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 100px; /*le agrego una columna con 100px para centrar el formulario*/
+        grid-template-rows: repeat(5, 50px);
+        grid-template-areas: 
+        "nombre-text nombre" 
+        "apellido-text apellido"
+        "email-text email" 
+        "telefono-text telefono"
+        "mensaje-text mensaje";
+        gap: 10px;
+        margin: 100px 100px;
+        row-gap: 10px;
+    }
+    input, textarea {
+       height: 30px;
+    }
+    label {
+        font-size: medium;
+    }
+}
