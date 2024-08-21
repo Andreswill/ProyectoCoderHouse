@@ -1,0 +1,148 @@
+
+/*estilos responsive*/
+@media screen and (max-width: 800px){
+    .cabecera__titulo {
+        font-size: 50px !important;
+        &:hover {
+            letter-spacing: 0rem !important;  /*estilos hover al titulo principal*/
+          }
+
+
+    }
+    .cabecera__logo {
+        width: 150px !important;
+    }
+    #navegacion {
+        height: 80px !important;
+    }
+    .btn-nav > a {
+        padding: 3px !important;
+        width: 100% !important;
+        font-size: 0.8rem !important;
+    }
+    .btn-nav > a > img {
+        height: 10px !important;
+    }
+}
+@media screen and (max-width: 500px){
+    .cabecera {
+        height: 250px !important;
+        .cabecera__titulo {
+            font-size: 40px !important;
+        }
+        .cabecera__logo {
+            width: 100px !important;
+        }
+    }
+    /*Estilos barra de navegación responsive*/
+    #navegacion {
+        display: flex !important;
+        flex-direction: column !important;
+        height: 60px !important;
+        margin-bottom: 100px !important;
+        .btn-nav {
+            a {
+                &:hover {
+                    transform: none !important;
+                }
+            }
+        } 
+
+    } 
+    
+      
+    
+    .pie-de-pagina {
+        background-color: black;
+        height: 250px !important;
+            .btn-footer {
+                a {
+            font-size: 0.7rem !important; 
+            }
+        }
+            .logos-contacto {
+            width: 10px !important;
+        }
+    }
+    
+}
+@media screen and (max-width: 356px){ 
+    .cabecera__titulo {
+        font-size: 25px !important;
+    }
+    .cabecera__logo {
+        width: 70px !important;
+    }
+    .cabecera {
+        height: 200px !important;
+    }
+}
+/*Estilos Responsive Contacto*/
+@media screen and (max-width: 820px){
+    article > h2 {
+        font-size: 2rem;
+    }
+    form {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 100px !important; /*le agrego una columna con 100px para centrar el formulario*/
+        grid-template-rows: repeat(5, 50px) !important;
+        grid-template-areas: 
+        "nombre-text nombre" 
+        "apellido-text apellido"
+        "email-text email" 
+        "telefono-text telefono"
+        "mensaje-text mensaje" !important;
+        gap: 10px !important;
+        margin: 100px 100px !important;
+        row-gap: 10px !important;
+    }
+    input, textarea {
+       height: 30px !important;
+    }
+    label {
+        font-size: medium !important;
+    }
+}
+/*Diseño responsive pagina ubocación*/
+@media screen and (max-width: 712px){
+    iframe {
+        width: 50% !important;
+        height: 200px !important;
+    }
+    .container-titulo {
+        font-size: 2rem !important;
+    }
+}
+/*Estilos Responsive about-us*/
+@media screen and (max-width: 800px){
+    .articulos-about-us {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+/*Estilos responsive pagina nuestros platos*/
+@media screen and (max-width: 1160px) {
+    .container__section {
+        grid-template-columns: repeat(2, 1fr) !important;  
+    }
+}
+@media screen and (max-width: 950px) {
+    .container__section {
+        grid-template-columns: repeat(1, 1fr) !important; 
+        width: 50% !important; 
+        .container__titulo {
+            font-size: 2rem !important;
+        }
+        .card {
+            width: 90% !important;
+            .card__img {
+                width: 100% !important;
+                height: 200px !important;
+            }
+            .card__nombre {
+                font-size: small !important;
+            }
+        }
+    }
+
+}
