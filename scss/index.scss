@@ -75,7 +75,14 @@
 .carousel-center {
   margin: 0 auto;
 }
-
+.main__titulo {
+  color: black;
+  font-family: $font-text;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
 /*estilos footer*/
 .pie-de-pagina {
   background-color: black;
@@ -120,14 +127,8 @@
 }
 }
 /*Estilos pagina contacto*/
-article {
+.container__contacto {
   text-align: center;
-  h2 {
-    color: black;
-    font-family: $font-text;
-    font-size: 2rem;
-    font-weight: bold;
-  }
   p {
     font-family: $font-text;
     font-size: larger;
@@ -199,11 +200,6 @@ form {
   text-align: center;
   margin: 50px;
   font-family: $font-text;
-  .container-titulo {
-    font-weight: bold;
-    font-size: 3rem;
-  
-  }
   .container-direccion {
     font-style: oblique;
     .container-img {
@@ -243,12 +239,6 @@ form {
 /*Estilos nuetros platos*/
 .container {
   margin: 10px;
-  .container__titulo {
-    font-family: $font-text;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-  }
   .container__section {
     width: 90%;
     display: grid;

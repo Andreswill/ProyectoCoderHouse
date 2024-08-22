@@ -57,6 +57,9 @@
   .pie-de-pagina .logos-contacto {
     width: 10px !important;
   }
+  .main__titulo {
+    font-size: 1.5rem !important;
+  }
 }
 @media screen and (max-width: 356px) {
   .cabecera__titulo {
@@ -117,9 +120,6 @@
   .container__section {
     grid-template-columns: repeat(1, 1fr) !important;
     width: 50% !important;
-  }
-  .container__section .container__titulo {
-    font-size: 2rem !important;
   }
   .container__section .card {
     width: 90% !important;
@@ -208,6 +208,15 @@
   margin: 0 auto;
 }
 
+.main__titulo {
+  color: black;
+  font-family: "Ubuntu";
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px;
+}
+
 /*estilos footer*/
 .pie-de-pagina {
   background-color: black;
@@ -253,16 +262,10 @@
 }
 
 /*Estilos pagina contacto*/
-article {
+.container__contacto {
   text-align: center;
 }
-article h2 {
-  color: black;
-  font-family: "Ubuntu";
-  font-size: 2rem;
-  font-weight: bold;
-}
-article p {
+.container__contacto p {
   font-family: "Ubuntu";
   font-size: larger;
 }
@@ -330,10 +333,6 @@ form input:focus, form textarea:focus {
   margin: 50px;
   font-family: "Ubuntu";
 }
-.container-maps .container-titulo {
-  font-weight: bold;
-  font-size: 3rem;
-}
 .container-maps .container-direccion {
   font-style: oblique;
 }
@@ -376,12 +375,6 @@ form input:focus, form textarea:focus {
 /*Estilos nuetros platos*/
 .container {
   margin: 10px;
-}
-.container .container__titulo {
-  font-family: "Ubuntu";
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
 }
 .container .container__section {
   width: 90%;

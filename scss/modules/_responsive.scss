@@ -64,6 +64,9 @@
             width: 10px !important;
         }
     }
+    .main__titulo{
+        font-size: 1.5rem !important;
+    }
     
 }
 @media screen and (max-width: 356px){ 
@@ -129,9 +132,6 @@
     .container__section {
         grid-template-columns: repeat(1, 1fr) !important; 
         width: 50% !important; 
-        .container__titulo {
-            font-size: 2rem !important;
-        }
         .card {
             width: 90% !important;
             .card__img {
