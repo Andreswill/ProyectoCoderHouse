@@ -93,8 +93,8 @@
 /*Diseño responsive pagina ubocación*/
 @media screen and (max-width: 712px) {
   iframe {
-    width: 50% !important;
-    height: 200px !important;
+    width: 50%;
+    height: 200px;
   }
   .container-titulo {
     font-size: 2rem !important;
@@ -125,8 +125,8 @@
     width: 90% !important;
   }
   .container__section .card .card__img {
-    width: 100% !important;
-    height: 200px !important;
+    width: 100%;
+    height: 200px;
   }
   .container__section .card .card__nombre {
     font-size: small !important;
@@ -177,8 +177,8 @@
 }
 #navegacion .btn-nav a {
   padding: 5px;
-  height: auto;
   width: 100%;
+  height: auto;
   border-style: none;
   background-color: #e18936;
   color: #821b1b;
@@ -396,7 +396,7 @@ form input:focus, form textarea:focus {
   border: 3px solid black;
   border-radius: 5px;
   text-align: center;
-  background-color: #E18936;
+  background-color: #e18936;
 }
 .container .container__section .card .card__img {
   width: 100%;

@@ -1,5 +1,6 @@
 @import "modules/_variables";
 @import "modules/_responsive";
+@import "modules/_mixins";
 
 .body {
   margin: 0;
@@ -31,8 +32,7 @@
 
 /*estilos barra de navegación*/
 #navegacion {
-  width: 100%;
-  height: 100px;
+  @include sizes(100%, 100px);
   box-sizing: border-box;
   margin: auto;
   background-color: $color-fondo;
@@ -43,8 +43,7 @@
     background-color: $color-fondo;
              a {
         padding: 5px;
-        height: auto;
-        width: 100%;
+        @include sizes(100%, auto);
         border-style: none;
         background-color: $color-fondo;
         color: $color-red;
@@ -262,10 +261,9 @@ form {
       border: 3px solid black;
       border-radius: 5px;
       text-align: center;
-      background-color:#E18936;;
+      background-color: $color-fondo;
       .card__img {
-        width: 100%;
-        height: 250px;
+        @include sizes(100%, 250px);
       }
       .card__nombre {
         font-family: $font-text;

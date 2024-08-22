@@ -1,5 +1,5 @@
-
 /*estilos responsive*/
+@import "_mixins";
 @media screen and (max-width: 800px){
     .cabecera__titulo {
         font-size: 50px !important;
@@ -106,8 +106,7 @@
 /*Diseño responsive pagina ubocación*/
 @media screen and (max-width: 712px){
     iframe {
-        width: 50% !important;
-        height: 200px !important;
+        @include sizes(50%, 200px);
     }
     .container-titulo {
         font-size: 2rem !important;
@@ -136,8 +135,7 @@
         .card {
             width: 90% !important;
             .card__img {
-                width: 100% !important;
-                height: 200px !important;
+                @include sizes(100%, 200px);
             }
             .card__nombre {
                 font-size: small !important;
