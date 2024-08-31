@@ -132,6 +132,23 @@
     font-size: small !important;
   }
 }
+@media screen and (max-width: 450px) {
+  .container__section .card {
+    width: 100% !important;
+  }
+  .container__section .card .card__img {
+    height: 180px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container__section .card {
+    width: 100% !important;
+    height: 200px !important;
+  }
+  .container__section .card .card__img {
+    height: 150px !important;
+  }
+}
 .body {
   margin: 0;
   padding: 0;
@@ -273,8 +290,8 @@
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 100px; /*le agrego una columna con 100px para centrar el formulario*/
-  grid-template-rows: repeat(3, 50px);
-  grid-template-areas: "nombre-text nombre apellido-text apellido" "email-text email telefono-text telefono" "mensaje-text mensaje mensaje mensaje";
+  grid-template-rows: repeat(4, 50px);
+  grid-template-areas: "nombre-text nombre apellido-text apellido" "email-text email telefono-text telefono" "mensaje-text mensaje mensaje mensaje" ". btn . .";
   gap: 10px;
   margin: 100px 100px;
   row-gap: 20px;
@@ -325,6 +342,14 @@ form input {
 form input:focus, form textarea:focus {
   border: 1px solid cornflowerblue;
   color: aliceblue;
+}
+form .btn-form {
+  grid-area: btn;
+  background-color: #e18936;
+  transition: 0.5s linear;
+}
+form .btn-form:hover {
+  background-color: cornflowerblue;
 }
 
 /*Estilos pagina Ubicación*/

@@ -144,3 +144,26 @@
     }
 
 }
+@media screen and (max-width: 450px) {
+    .container__section {
+        .card {
+            width: 100% !important;
+            .card__img {
+                height: 180px !important;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .container__section {
+        .card {
+            width: 100% !important;
+            height: 200px !important;
+            .card__img {
+                height: 150px !important;
+            }
+        }
+    }
+
+}

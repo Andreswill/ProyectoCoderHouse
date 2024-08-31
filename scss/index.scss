@@ -137,11 +137,12 @@
 form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 100px; /*le agrego una columna con 100px para centrar el formulario*/
-  grid-template-rows: repeat(3, 50px);
+  grid-template-rows: repeat(4, 50px);
   grid-template-areas: 
   "nombre-text nombre apellido-text apellido"
   "email-text email telefono-text telefono"
-  "mensaje-text mensaje mensaje mensaje";
+  "mensaje-text mensaje mensaje mensaje"
+  ". btn . .";
   gap: 10px;
   margin: 100px 100px;
   row-gap: 20px;
@@ -192,6 +193,14 @@ form {
   input:focus, textarea:focus {
     border: 1px solid cornflowerblue;
     color: aliceblue;
+  }
+  .btn-form {
+    grid-area: btn;
+    background-color: $color-fondo;
+    transition: 0.5s linear;
+    &:hover{
+      background-color: cornflowerblue;
+    }
   }
 }
 
